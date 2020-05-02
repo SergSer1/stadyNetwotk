@@ -26,7 +26,7 @@ int main(int argc, char **argv)
     
     strcpy(buf, "Поставте максимум баллов\n");
     int msgLen = strlen(buf);
-    int mySocket = socket(AF_INET, SOCK_DGRAM, 0);
+    int mySocket = socket(AF_INET, SOCK_STREAM, 0);
     if (mySocket == -1){
         errHandler("Error open soket", 11);
     }
